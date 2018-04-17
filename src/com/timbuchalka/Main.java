@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
 //        switchStatement();
-        forStatement();
+//        forStatement();
+        whileDoWhile();
     }
 
     public static void switchStatement() {
@@ -46,5 +47,22 @@ public class Main {
 
     public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate / 100));
+    }
+
+    public static void whileDoWhile() {
+        int count = 1;
+        while (count != 6) {
+            System.out.println("count value is " + count);
+            count++;
+        }
+        count = 6;
+        do {
+            System.out.println("count value was " + count);
+            count++;
+
+            if(count > 100) {
+                break;
+            }
+        } while (count != 6);
     }
 }
